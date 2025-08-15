@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HerWish</title>
+    <!-- Tailwind CSS Stylesheet -->
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Offer Section -->
+    <div class="bg-black text-white text-center text-xl">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order</p>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav id="navBar" class="bg-white shadow sticky top-0 z-10 transition-all duration-300">
+        <div class="flex items-center justify-between px-6 py-4">
+
+            <h1 class="text-3xl font-semibold">
+                <span class="text-red-500">H</span><span class="text-black">er</span><span
+                    class="text-red-500">W</span><span class="text-black">ish</span>
+            </h1>
+            </h1>
+
+            <ul class="flex justify-center space-x-8 py-3 text-gray-700 font-medium">
+                <li><a href="index.html" class="hover:text-red-500">Home</a></li>
+                <li><a href="product.html" class="hover:text-red-500">Products</a></li>
+                <li><a href="contact.html" class="hover:text-red-500">Contact</a></li>
+            </ul>
+
+            <div class="flex items-center gap-2">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6 cursor-pointer">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+
+<!-- Products -->
+<div class="flex gap-6 min-h-screen">
+
+  <!-- Filter -->
+    <div class="w-1/5 p-6">
+      <h2 class="text-xl font-bold mb-4">Filters</h2>
+      <div class="mb-4">
+        <h2 class="text-lg text-gray-700 font-semibold mb-2">Categories</h2>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="category" value="Western"> Western
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="category" value="Ethnic"> Ethnic
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="category" value="Footwear"> Footwear
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="category" value="Watch"> Watch
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="category" value="Bags"> Bags
+        </label>
+      </div>
+
+      <div class="mb-4">
+        <h2 class="text-lg text-gray-700 font-semibold mb-2">Colors</h2>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="Black"> Black
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="White"> White
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="Red"> Red
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="Blue"> Blue
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="Pink"> Pink
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="Green"> Green
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="Beige"> Beige
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="Yellow"> Yellow
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="color" value="Brown"> Brown
+        </label>
+      </div>
+
+      <div class="mb-4">
+        <h2 class="text-lg text-gray-700 font-semibold mb-2">Promotion</h2>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="promotion" value="New Arrival"> New Arrival
+        </label>
+        <label class="flex items-center mb-2">
+          <input type="checkbox" class="mr-2 filter-checkbox" data-type="promotion" value="Best Seller"> Best Seller
+        </label>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="w-4/5 p-6 ml-12">
+      <div class="mb-6">
+        <div id="search" class="flex items-center bg-gray-100 rounded-full shadow-sm px-4 py-2">
+          <input type="text" placeholder="Search" class="flex-grow outline-none text-sm" />
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-500 hover:text-gray-700" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12.9 14.32a8 8 0 111.414-1.414l4.387 4.387a1 1 0 01-1.414 1.414l-4.387-4.387zM8 14a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+          </svg>
+        </div>
+      </div>
+
+<div id="productContainer" class="flex flex-wrap gap-10 justify-start mx-5 ">
+    
+  <div class="w-1/3 product-card" data-category="Western" data-color="Red" data-promotion="New Arrival">
+    <img src="./images/western1.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Puff Sleeve Crop Top</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="White" data-promotion="New Arrival">
+    <img src="./images/western2.jpg" alt="Summer Green" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Wrap Long Sleeve Dress</h3>
+    <p class="text-lg mt-1">₹260</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="Green" data-promotion="Best Seller">
+    <img src="./images/western3.jpg" alt="Party Floral Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Yiang Crop Top</h3>
+    <p class="text-lg mt-1">₹399</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="Brown" data-promotion="Best seller">
+    <img src="./images/western4.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Buttoned Dress</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+   <div class="w-1/3 product-card" data-category="Western" data-color="Blue" data-promotion="Best Seller">
+    <img src="./images/western5.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Wide-Leg Jeans</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="White" data-promotion="New Arrival">
+    <img src="./images/western6.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Flared Trousers</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="Black" data-promotion="New Arrival">
+    <img src="./images/western7.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">High-Waist Leather Pant</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="blue" data-promotion="New Arrival">
+    <img src="./images/western8.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">High-Waisted Denim Shorts</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="Black" data-promotion="Best Seller">
+    <img src="./images/western9.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Pleated skirt</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="Blue" data-promotion="New Arrival">
+    <img src="./images/western10.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Oversized Denim Jacket</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="Blue" data-promotion="">
+    <img src="./images/western11.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Ruffle Hem Spot Top</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Western" data-color="beige" data-promotion="New Arrival">
+    <img src="./images/western12.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Straight-Fit Coat</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Ethnic" data-color="Voilet" data-promotion="New Arrival">
+    <img src="./images/ethnic1.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Anarkali suit</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Ethnic" data-color="Pink" data-promotion="Best Seller">
+    <img src="./images/ethnic2.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Kurta Set</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Ethnic" data-color="Red" data-promotion="Bst Seller">
+    <img src="./images/ethnic3.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Co-ord Set</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Ethnic" data-color="Red" data-promotion="New Arrival">
+    <img src="./images/ethnic4.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Chanderi Anarkali Suit</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Ethnic" data-color="Yellow" data-promotion="New Arrival">
+    <img src="./images/ethnic5.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Palazzo Suit</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Ethnic" data-color="Red" data-promotion="New Arrival">
+    <img src="./images/ethnic6.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Silk Saree</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Ethnic" data-color="Pink" data-promotion="est Seller">
+    <img src="./images/ethnic7.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Embroidered Banarasi Saree</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Ethnic" data-color="White" data-promotion="New Arrival">
+    <img src="./images/ethnic8.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Organza Saree</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Footwear" data-color="Green" data-promotion="New Arrival">
+    <img src="./images/footwear1.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Point Toe Slingback Pumps</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Footwear" data-color="Beige" data-promotion="New Arrival">
+    <img src="./images/footwear2.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Platform Loafers</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Footwear" data-color="brown" data-promotion="Best Seller">
+    <img src="./images/footwear3.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Leather Wedge Sandal</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Footwear" data-color="Black" data-promotion="Best Seller">
+    <img src="./images/footwear4.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Shoes</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Footwear" data-color="White" data-promotion="New Arrival">
+    <img src="./images/footwear5.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Ankle Strap Transparent Heel</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Footwear" data-color="Brown" data-promotion="Best Seller">
+    <img src="./images/footwear6.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Flat Sandal</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Footwear" data-color="Red" data-promotion="New Arrival">
+    <img src="./images/footwear7.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Faye Block Heel</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Footwear" data-color="Brown" data-promotion="Best Seller">
+    <img src="./images/footwear8.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Leather Slider Sandals</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Watch" data-color="White" data-promotion="New Arrival">
+    <img src="./images/watch1.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Classic Analog Watch</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Watch" data-color="Brown" data-promotion="Best Seller">
+    <img src="./images/watch2.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Leather Strap Watch</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Watch" data-color="Pink" data-promotion="New Arrival">
+    <img src="./images/watch3.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Fossil Women's Watch</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div> 
+  <div class="w-1/3 product-card" data-category="Watch" data-color="White" data-promotion="Best Seller">
+    <img src="./images/watch4.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Women's Analog Watch</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Watch" data-color="Beige" data-promotion="New Arrival">
+    <img src="./images/watch5.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Smartwatch</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Bags" data-color="Brown" data-promotion="Best Seller">
+    <img src="./images/bag1.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Flap Shoulder Bag</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Bags" data-color="Black" data-promotion="Best Seller">
+    <img src="./images/bag2.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Ring Handle Bag</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Bags" data-color="Yellow" data-promotion="Best Seller">
+    <img src="./images/bag3.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Backpack</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Bags" data-color="Beige" data-promotion="New Arrival">
+    <img src="./images/bag4.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Wallet Handbag</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+  <div class="w-1/3 product-card" data-category="Bags" data-color="Beige" data-promotion="New Arrival">
+    <img src="./images/bag5.jpg" alt="Floral Summer Shirt" class="w-[230px] h-[250px] rounded-lg" />
+    <h3 class="text-lg font-semibold mt-4">Tote Bag</h3>
+    <p class="text-lg mt-1">₹220</p>
+  </div>
+</div>
+
+    </main>
+  </div>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#f4ebe7] text-[#1f1f1f] pt-10 pb-6 font-[Poppins]">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+
+            <div>
+                <h3 class="text-xl font-semibold mb-4">HerWish</h3>
+                <p class="text-[#4b4b4b]">
+                    Embrace elegance. Discover fashion that empowers your unique style.
+                </p>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Shop</h4>
+                <ul class="flex flex-col gap-2 text-[#4b4b4b]">
+                    <li><a href="#" class="hover:underline">New Arrivals</a></li>
+                    <li><a href="#" class="hover:underline">Best Sellers</a></li>
+                    <li><a href="#" class="hover:underline">Accessories</a></li>
+                    <li><a href="#" class="hover:underline">Gift Cards</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">About</h4>
+                <ul class="flex flex-col gap-2 text-[#4b4b4b]">
+                    <li><a href="#" class="hover:underline">Our Story</a></li>
+                    <li><a href="#" class="hover:underline">Careers</a></li>
+                    <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:underline">Terms of Service</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-semibold mb-4">Get in Touch</h4>
+                <p class="text-[#4b4b4b] mb-2">Email: support@herwish.com</p>
+                <div class="flex space-x-4 mt-2">
+                    <a href="#" class="text-[#1f1f1f] hover:text-[#c5a992]">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-[#1f1f1f] hover:text-[#c5a992]">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-[#1f1f1f] hover:text-[#c5a992]">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-10 text-center text-[#4b4b4b] text-xs border-t border-[#d8cec6] pt-4">
+            © 2025 HerWish. All rights reserved.
+        </div>
+    </footer>
+
+
+    <script src="./filter.js"></script>
+    <script src="./product.js"></script>
+</body>
+</html>
